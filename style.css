@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Amiamie';
+    src: url('webfonts/Amiamie-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url('webfonts/Baskervville-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Amiamie regular italic';
+    src: url('webfonts/Amiamie-Italic.woff2') format('woff2');
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Amiamie',sans-serif;
+    line-height: 1.4;
+    color: rgb(255, 255, 255);
+}
+
+a { 
+    text-decoration: none;
+    color:currentColor;
+}
+
+.header a {
+text-decoration: underline;
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.project, .support, .cat, .year {
+    margin-right: 10px; /* Espacement entre les divs, si nécessaire */
+}
+
+nav{
+    margin-top: 72px;
+}
+
+nav a{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    /* transition: 2s; */
+    width: 100%;
+    align-items: center;
+    height:36px;
+}
+
+nav a div{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+} 
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    ;
+
+}
+.support{
+    font-family:'Amiamie regular italic';
+    font-size: 16px;
+}
+
+.cat{
+    font-family: 'Amiamie regular italic';
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.year{
+    font-family: 'Amiamie regular italic';
+}
+
+.header {
+    text-decoration: none;
+    font-family: 'Baskerville';
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.apropos {
+    text-align: right;
+}
+
+span{
+    position:absolute;
+    border-radius:100%;
+    font-size:20px;
+    color: black;
+    user-select: none;
+    pointer-events: none; 
+  }
+
+.image.active {
+    display: block;
+}
+
+.image {
+    display: none
+}
+
+.image {
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 450px;
+    cursor: pointer;
+}
+
+.image:hover {
+    border: 1px solid black;
+}
+
+.container {
+    position: relative;
+
+}
+
+p{
+    position: absolute;
+    top: 0;
+    left: 600px;
+}
+
+p:hover{
+    color: #000000;
+}
+
+.description {
+    font-family: 'Amiamie regular italic';
+    font-size: 14px;
+    position:static;
+    border-radius: 100%;
+    /* font-size: 20px; */
+    color: currentColor;
+    user-select:none;
+    pointer-events:all;
+
+}
+
+.imagepropos {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.special {
+    position: static;
+    font-family: 'Amiamie',sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.image1 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 800px;
+    cursor: pointer;
+}
+
+.image1.active {
+    display: flex; 
+}
+
+.image1.active:hover {
+    border: 1px solid black; 
+}
+
+.special a {
+    text-decoration: underline;
+}
+
+.special a:hover {
+    text-decoration: none;
+}
+
+.special2 {
+    position: static;
+    text-align: center;
+    color: #000000;
+    margin-left: 20px;
+    margin-top: 40px;
+}
